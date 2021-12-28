@@ -9,3 +9,13 @@ C:\Users\acerv\OneDrive\Desktop\Gestion de clientes\obj\Debug\Gestion de cliente
 C:\Users\acerv\OneDrive\Desktop\Gestion de clientes\obj\Debug\Gestion de clientes.pdb
 C:\Users\acerv\OneDrive\Desktop\Gestion de clientes\obj\Debug\Gestion_de_clientes.fCostumers.resources
 C:\Users\acerv\OneDrive\Desktop\Gestion de clientes\obj\Debug\Gestion de clientes.csproj.AssemblyReference.cache
+C:\Users\acerv\OneDrive\Desktop\new c# works\Gestion de clientes\bin\Debug\Gestion de clientes.exe.config
+C:\Users\acerv\OneDrive\Desktop\new c# works\Gestion de clientes\bin\Debug\Gestion de clientes.exe
+C:\Users\acerv\OneDrive\Desktop\new c# works\Gestion de clientes\bin\Debug\Gestion de clientes.pdb
+C:\Users\acerv\OneDrive\Desktop\new c# works\Gestion de clientes\obj\Debug\Gestion_de_clientes.fCostumers.resources
+C:\Users\acerv\OneDrive\Desktop\new c# works\Gestion de clientes\obj\Debug\Gestion_de_clientes.fMain.resources
+C:\Users\acerv\OneDrive\Desktop\new c# works\Gestion de clientes\obj\Debug\Gestion_de_clientes.Properties.Resources.resources
+C:\Users\acerv\OneDrive\Desktop\new c# works\Gestion de clientes\obj\Debug\Gestion de clientes.csproj.GenerateResource.cache
+C:\Users\acerv\OneDrive\Desktop\new c# works\Gestion de clientes\obj\Debug\Gestion de clientes.csproj.CoreCompileInputs.cache
+C:\Users\acerv\OneDrive\Desktop\new c# works\Gestion de clientes\obj\Debug\Gestion de clientes.exe
+C:\Users\acerv\OneDrive\Desktop\new c# works\Gestion de clientes\obj\Debug\Gestion de clientes.pdb

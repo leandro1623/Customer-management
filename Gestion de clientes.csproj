@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="CustomersManager.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="DataBase.cs" />
     <Compile Include="fCostumers.cs">
       <SubType>Form</SubType>
     </Compile>

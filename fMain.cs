@@ -12,30 +12,20 @@ namespace Gestion_de_clientes
 {
     public partial class fMain : Form
     {
-        private CustomersManager _customerManager;
+        private CustomersManager _customerManager = new CustomersManager();
+
         public fMain()
         {
             InitializeComponent();
-            Init();
+            _Refresh();
         }
 
-        private void fMain_Activated(object sender, EventArgs e)
-        {
-            btnRefresh.PerformClick();
-        }
-
-
-        private void Init()
-        {
-            _customerManager = new CustomersManager();
-        }
-
-        private void btnRefresh_Click(object sender, EventArgs e)//refresh buton
+        private void _Refresh()
         {
             //looking for and showing all customers in the list of the customers
             lstCustomers.Items.Clear();
             List<Customer> customers = _customerManager.Customers;
-            foreach(Customer customer in customers)
+            foreach (Customer customer in customers)
             {
                 ListViewItem item = lstCustomers.Items.Add(customer.Name);
                 item.SubItems.Add(customer.LastName);
@@ -57,6 +47,16 @@ namespace Gestion_de_clientes
             }
             lstCustomers.Focus();
             lblCountOfCostumers.Text = _customerManager.Customers.Count.ToString();//number of customers what there are in the list
+        }
+
+        private void fMain_Activated(object sender, EventArgs e)
+        {
+            //btnRefresh.PerformClick();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)//refresh buton
+        {
+            _Refresh();
         }
 
         private void btnAddCustomer_Click(object sender, EventArgs e)

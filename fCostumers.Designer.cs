@@ -31,6 +31,7 @@ namespace Gestion_de_clientes
         {
             this.components = new System.ComponentModel.Container();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.bindSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@ namespace Gestion_de_clientes
             this.label4 = new System.Windows.Forms.Label();
             this.lblCreateDate = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.bindSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +52,10 @@ namespace Gestion_de_clientes
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(187, 20);
             this.txtName.TabIndex = 0;
+            // 
+            // bindSource
+            // 
+            this.bindSource.DataSource = typeof(Gestion_de_clientes.Customer);
             // 
             // txtLastName
             // 
@@ -73,7 +77,6 @@ namespace Gestion_de_clientes
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindSource, "Create", true));
             this.label1.Location = new System.Drawing.Point(32, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
@@ -146,10 +149,6 @@ namespace Gestion_de_clientes
             this.label5.Size = new System.Drawing.Size(327, 13);
             this.label5.TabIndex = 10;
             this.label5.Text = "Please fill all fields, if you don\'t do it the new costumer not be added!\r\n";
-            // 
-            // bindSource
-            // 
-            this.bindSource.DataSource = typeof(Gestion_de_clientes.Customer);
             // 
             // fCostumers
             // 

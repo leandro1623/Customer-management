@@ -33,6 +33,7 @@ namespace Gestion_de_clientes
             this.colName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colLastname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colAddress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clCreateDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnAddCustomer = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -41,7 +42,6 @@ namespace Gestion_de_clientes
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.lblCountOfCostumers = new System.Windows.Forms.Label();
-            this.clCreateDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,8 +58,9 @@ namespace Gestion_de_clientes
             this.lstCustomers.FullRowSelect = true;
             this.lstCustomers.HideSelection = false;
             this.lstCustomers.Location = new System.Drawing.Point(12, 68);
+            this.lstCustomers.MultiSelect = false;
             this.lstCustomers.Name = "lstCustomers";
-            this.lstCustomers.Size = new System.Drawing.Size(732, 398);
+            this.lstCustomers.Size = new System.Drawing.Size(840, 398);
             this.lstCustomers.TabIndex = 0;
             this.lstCustomers.UseCompatibleStateImageBehavior = false;
             this.lstCustomers.View = System.Windows.Forms.View.Details;
@@ -79,6 +80,11 @@ namespace Gestion_de_clientes
             // 
             this.colAddress.Text = "Address";
             this.colAddress.Width = 200;
+            // 
+            // clCreateDate
+            // 
+            this.clCreateDate.Text = "Create Date";
+            this.clCreateDate.Width = 234;
             // 
             // btnRefresh
             // 
@@ -106,7 +112,7 @@ namespace Gestion_de_clientes
             this.archivoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(756, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(864, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -121,7 +127,7 @@ namespace Gestion_de_clientes
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.salirToolStripMenuItem.Text = "Get out";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -154,16 +160,11 @@ namespace Gestion_de_clientes
             this.lblCountOfCostumers.Size = new System.Drawing.Size(0, 13);
             this.lblCountOfCostumers.TabIndex = 6;
             // 
-            // clCreateDate
-            // 
-            this.clCreateDate.Text = "Create Date";
-            this.clCreateDate.Width = 123;
-            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(756, 503);
+            this.ClientSize = new System.Drawing.Size(864, 503);
             this.Controls.Add(this.lblCountOfCostumers);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
